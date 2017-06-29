@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Front-End Test">
+    <meta name="author" content="Diego Felipe Ramírez Gonzalez">
+	<title>The Herbalist Store</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="css/shop.css">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+</head>
+<body id="shop-page">
+	<!-- Sidebar Wrapper -->
+	<div id="shop-wrapper" class="col-sm-2 animated slideInDown">
+		<h4 class="welcome">Welcome <b>Administrator</b></h4>
+		<img src="img/felipe.jpg" class="img-circle img-responsive profile-img">
+		<center><h5>feliperamigon1704@gmail.com</h5></center>
+		<hr>
+		<ul id="navigation-list">
+			<li>Perennial Plants <span class="badge">6</span></li>
+			<li>Shrub Plants <span class="badge">7</span></li>
+			<li>Climber Plants <span class="badge">4</span></li>
+			<li>Grasses <span class="badge">3</span></li>
+		</ul>
+		<hr>
+		<!-- Shopping Cart -->
+		<div id="cart">
+			<h4 class="welcome">My shopping car</h4>
+			<table class="shopping-cart table table-striped">
+				<tr>
+					<th>Description</th>
+					<th>Price</th>
+				</tr>
+			</table>
+			<button class="btn btn-lg btn-success pull-right">Proceed to buy</button>	
+		</div>
+		<!-- /.Shopping Cart -->
+		<!-- Add a new plant to the inventory -->
+		<div id="add-new-plant" hidden>
+			<h4 class="welcome">Add a new plant</h4>
+			<form>
+				<label>Name</label>
+				<input type="text" name="name" placeholder="Name"><br>
+				<label>Price</label>
+				<input type="text" name="name" placeholder="Price"><br>
+				<label>Description</label>
+				<input type="text" name="name" placeholder="Description"><br>
+				<button type="submit" id="add-plant" class="btn btn-lg btn-success">Add to the inventory</button>
+			</form>
+		</div>
+		<!-- /.Add a new plant to the inventory -->
+	</div>
+	<!-- /.Sidebar Wrapper -->
+	<h2 id="shop-title" class="animated bounceInDown">The Herbalist Store</h2>
+	<div id="shop" class="col-sm-9 col-sm-offset-2">
+	<h4 class="badge-title">Perennial Plants</h4>
+	<span class="glyphicon glyphicon-plus pull-right" href="#form-modal" rel="modal:open"></span>
+		<div id=perennial>
+			<div class="shop-thumb col-sm-2">
+				<img class="img-responsive img-shop" src="img/perenial1.jpg">
+				<span class="plant"><b>Achillea 'Moonshine'</b></span>
+				<br>
+				<span class="price">40.000 COP</span>
+				<span class="glyphicon glyphicon-shopping-cart pull-right"></span>
+				<span class="glyphicon glyphicon-heart pull-right"></span>
+			</div>
+			<div class="shop-thumb col-sm-2">
+				<img class="img-responsive img-shop" src="img/perenial2.jpg">
+				<span class="plant"><b>Achillea 'Moonshine'</b></span>
+				<br>
+				<span class="price">20.000 COP</span>
+				<span class="glyphicon glyphicon-shopping-cart pull-right"></span>
+				<span class="glyphicon glyphicon-heart pull-right"></span>
+			</div>
+			<div class="shop-thumb col-sm-2">
+				<img class="img-responsive img-shop" src="img/perenial3.jpg">
+				<span class="plant"><b>Achillea 'Moonshine'</b></span>
+				<br>
+				<span class="price">13.000 COP</span>
+				<span class="glyphicon glyphicon-shopping-cart pull-right"></span>
+				<span class="glyphicon glyphicon-heart pull-right"></span>
+			</div>
+			<div class="shop-thumb col-sm-2">
+				<img class="img-responsive img-shop" src="img/perenial4.jpg">
+				<span class="plant"><b>Achillea 'Moonshine'</b></span>
+				<br>
+				<span class="price">27.000 COP</span>
+				<span class="glyphicon glyphicon-shopping-cart pull-right"></span>
+				<span class="glyphicon glyphicon-heart pull-right"></span>	
+			</div>
+			<div class="shop-thumb col-sm-2">
+				<img class="img-responsive img-shop" src="img/perenial5.jpg">
+				<span class="plant"><b>Achillea 'Moonshine'</b></span>
+				<br>
+				<span class="price">33.000 COP</span>
+				<span class="glyphicon glyphicon-shopping-cart pull-right"></span>
+				<span class="glyphicon glyphicon-heart pull-right"></span>
+			</div>
+			<div class="shop-thumb col-sm-2">
+				<img class="img-responsive img-shop" src="img/perenial6.jpg">
+				<span class="plant"><b>Achillea 'Moonshine'</b></span>
+				<br>
+				<span class="price">4.000 COP</span>
+				<span class="glyphicon glyphicon-shopping-cart pull-right"></span>
+				<span class="glyphicon glyphicon-heart pull-right"></span>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- jQuery -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Custom JS -->
+	<script src="js/index.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+</body>
+</html>
